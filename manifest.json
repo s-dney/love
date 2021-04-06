@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Love",
+  "version": "0.1",
+  "description": "A rubrication for the Internet",
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["love.js"]
+    }]
+}
