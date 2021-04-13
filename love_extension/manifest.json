@@ -5,6 +5,7 @@
   "description": "A rubrication for the Internet",
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*"],
+    "exclude_matches": ["https://www.youtube.com/*"],
     "js": ["love.js"]
     }],
     "icons": {
