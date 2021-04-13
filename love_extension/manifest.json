@@ -6,5 +6,7 @@
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*"],
     "js": ["love.js"]
-    }]
+    }],
+    "icons": {
+     "128": "FF0000.jpeg" }
 }
