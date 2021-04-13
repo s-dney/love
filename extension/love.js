@@ -21,7 +21,7 @@ function walk(node)
 
   // the current script has to ignore iframes, because the privacy settings of websites break the iframes when you try to run the script.
   if (tagName == 'iframe') {
-		break;
+		return;
 	}
 
 
