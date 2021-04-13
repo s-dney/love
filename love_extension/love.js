@@ -1,6 +1,14 @@
 var wordArray = ["love", "Love"]
 var extendedWordArray = ["love", "Love", "loved", "loves", "LOVE", "loving", "Loving", "beloved"]
 
+// try {
+//   var t = document.firstChild
+//   t.innerHTML = "it's working"
+
+// }
+// catch(err) {
+//   console.log(err.message);
+// }
 
 walk(document.body);
 
@@ -40,7 +48,10 @@ function walk(node)
 			break;
 
 		case 3: // Text node
-			love(node.parentElement);
+      if (node.textContent.toLowerCase().includes("love")){
+        love(node.parentElement);
+      }
+			
 			break;
 	}
 }
